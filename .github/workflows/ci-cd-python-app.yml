@@ -82,8 +82,8 @@ jobs:
     
     env:
       PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-      GKE_CLUSTER: groovy-ceiling-472516-i7
-      GKE_REGION: us-central1	   # TODO: update to cluster region
+      GKE_CLUSTER: hello-gitops-cluster
+      GKE_REGION: europe-central2
 
     steps:
     - name: Check out code
@@ -101,7 +101,7 @@ jobs:
         credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
     - name: Set up Cloud SDK
-      uses: google-github-actions/setup-gcloud@v0
+      uses: google-github-actions/setup-gcloud@v2
 
     - name: Get the GKE credentials so we can deploy to the cluster
       run: |
