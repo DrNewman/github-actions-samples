@@ -8,4 +8,4 @@ namespace: hello-gitops
 images:
 - name: hello-gitops
   newName: drnewman/hello-gitops
-  newTag: 39e1d9a3daf62b6de2117010a72f604c42c72cc9
+  newTag: dcdcbabc5f38d06c11ac40a50f6010f214d6a35d
